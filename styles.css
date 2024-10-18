@@ -1,0 +1,9 @@
+:root{
+    --root-size: 1.2rem;
+    --fgcolor: #14a44e;
+}
+
+body{
+    font-size: var (--root-size);
+    margin: 96px
+}
