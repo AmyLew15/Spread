@@ -5,14 +5,23 @@
 
 body{
     font-size: var(--root-size);
-    font-family: 'roboto';
+    font-family: "Roboto";
     padding:20px;
+    background-color: #FFFBF1;
 }
 
 hgroup{
     padding: 20px;
     margin: 20px;
     background-color: #F9451D;
+}
+
+h1{
+    font-family: "Big Shoulders Inline Text";
+}
+
+blockquote{
+    font-family: "Oswald";
 }
 
 p{
