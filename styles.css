@@ -17,7 +17,7 @@ h1{
     font-family: "Big Shoulders Inline Display";
     font-size: calc(var(--root-size) * 6);
     font-weight:900px;
-    margin-top: -20px
+    margin-top: -40px
 }
 
 h2{
@@ -38,7 +38,7 @@ h3{
 section:nth-child(1){
     font-family: "Big Shoulders Inline Display";
     font-size: calc(var(--root-size) * 5);
-    font-weight: 700;
+    font-weight: 900;
     left: 60px;
     position: relative;
     top: 60px
