@@ -17,7 +17,7 @@ h1{
     font-family: "Big Shoulders Inline Text";
     font-size: calc(var(--root-size) * 5);
     font-weight:700px;
-    margin: -20px;
+    margin-top: -20px
 }
 
 h2{
