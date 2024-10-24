@@ -1,0 +1,1 @@
+Howdy! Yes I've got a second project on Github and with a partner 🤠 We are making this site to continue to learn about responsive design using HTML and CSS. The artricle we are using was originally published by AFROPUNK and we are using our design as our response to it. Very cool stuff and appreciate all the support on here as we learn more coding!
