@@ -59,8 +59,8 @@ blockquote{
     border-bottom: 12px solid #F9451D;
     padding: var(--root-size);
 }
-/* start of responsive design*/
-@media (min-width: 500px) {
+/* start of mobile responsive design*/
+@media (min-width: 390px) {
     p{
         margin: calc(var(--root-size)*4);
         line-height: calc(var(--root-size)*1.8);
@@ -72,7 +72,13 @@ blockquote{
     }
 }
 
+/* start of desktop responsive design */
+@media (min-width: 1280px){
 
+}
+
+/* start of letter print design*/
+@media (min-width: 2550px)
 
 
 
