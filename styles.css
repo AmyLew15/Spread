@@ -16,7 +16,7 @@ hgroup{
 h1{
     font-family: "Big Shoulders Inline Text";
     font-size: calc(var(--root-size) * 5);
-    font-weight:700px;
+    font-weight:800px;
     margin-top: -20px
 }
 
@@ -29,6 +29,7 @@ h2{
 h3{
     font-size: var(--root-size);
     font-family: "Roboto";
+    font-size: calc(var(--root-size) * .75);
     font-weight:500px;
     max-width: 60%;
     line-height: calc(var(--root-size)*1.5);
