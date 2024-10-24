@@ -40,7 +40,7 @@ section:nth-child(1){
     font-family: "Big Shoulders Inline Display";
     font-size: calc(var(--root-size) * 5);
     font-weight: 900;
-    left: 60px;
+    text-align: right;
     position: relative;
     top: 60px
  }
