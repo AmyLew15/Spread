@@ -20,17 +20,14 @@ p{
 }
 
 @media (min-width: 500px){
-
 p{
     margin: calc(var(--root-size)*4);
     line-height: calc(var(--root-size)*1.8);
     max-width: 65%;
 }
-
 blockquote{
     /* max-width: 50%; */ /*Blockquote is not right aligning */
 }
-
 }
 
 
@@ -41,7 +38,8 @@ hgroup{
 
 h1{
     font-family: "Big Shoulders Inline Text";
-    font-size: calc(var(--root-size) * 4);
+    font-size: calc(var(--root-size) * 5);
+    margin: 0;
 }
 
 h2{
@@ -49,7 +47,13 @@ h2{
     font-size: calc(var(--root-size) * 1.5);
     /* font: weight 180px;  */ /*Need a different weight for this */
 
+}
 
+h3{
+    font-size: var(--root-size);
+    font-weight: bold;
+    max-width: 60%;
+    line-height: calc(var(--root-size)*1.5);
 }
 
 blockquote{
