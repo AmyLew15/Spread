@@ -36,6 +36,13 @@ hgroup{
     padding: 20px;
     margin-top: -10px;
 }
+section:nth-child(1){
+    font-family: "Big Shoulders Inline Text";
+    font-size: calc(var(--root-size) * 5);
+    left: 60px;
+    position: relative;
+    top: 60px
+ }
 
 h1{
     font-family: "Big Shoulders Inline Text";
