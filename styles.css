@@ -60,16 +60,18 @@ blockquote{
     padding: var(--root-size);
 }
 /* start of responsive design*/
-@media (min-width: 500px){
-p{
-    margin: calc(var(--root-size)*4);
-    line-height: calc(var(--root-size)*1.8);
-    max-width: 65%;
+@media (min-width: 500px) {
+    p{
+        margin: calc(var(--root-size)*4);
+        line-height: calc(var(--root-size)*1.8);
+        max-width: 65%;
+    }
+    blockquote{
+        margin-top: 20px;
+        text-align: right;
+    }
 }
-blockquote{
-    /* max-width: 50%; */ /*Blockquote is not right aligning */
-}
-}
+
 
 
 
