@@ -14,7 +14,7 @@ hgroup{
     padding: 20px;
 }
 h1{
-    font-family: "Big Shoulders Inline Text";
+    font-family: "Big Shoulders Inline Display";
     font-size: calc(var(--root-size) * 5);
     font-weight:800px;
     margin-top: -20px
