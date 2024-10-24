@@ -19,6 +19,20 @@ p{
     max-width: 85%;
 }
 
+@media (min-width: 500px){
+
+p{
+    margin: calc(var(--root-size)*4);
+    line-height: calc(var(--root-size)*1.8);
+    max-width: 65%;
+}
+
+blockquote{
+    /* max-width: 50%; */
+}
+
+}
+
 
 hgroup{
     padding: 20px;
