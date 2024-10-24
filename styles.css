@@ -8,7 +8,6 @@ body{
     font-family: "Roboto";
     background-color: #FFFBF1;
     margin: auto;
-    align-content: center;
 }
 
 hgroup{
@@ -63,6 +62,11 @@ blockquote{
     border-top: 12px solid #F9451D;
     border-bottom: 12px solid #F9451D;
     padding: var(--root-size);
+}
+
+footer{
+    background-color: #F9451D;
+    padding: 20px;
 }
 /* start of mobile responsive design*/
 @media (min-width: 390px) {
