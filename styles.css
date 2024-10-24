@@ -28,7 +28,7 @@ p{
 }
 
 blockquote{
-    /* max-width: 50%; */
+    /* max-width: 50%; */ /*Blockquote is not right aligning */
 }
 
 }
@@ -42,6 +42,14 @@ hgroup{
 h1{
     font-family: "Big Shoulders Inline Text";
     font-size: calc(var(--root-size) * 4);
+}
+
+h2{
+    font-family: "Oswald";
+    font-size: calc(var(--root-size) * 1.5);
+    /* font: weight 180px;  */ /*Need a different weight for this */
+
+
 }
 
 blockquote{
