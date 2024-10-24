@@ -1,6 +1,6 @@
 :root{
-    --root-size: 20px;
-    --line-height:32px;
+    --font-size: 20px;
+    --line-height: 30px;
 }
 
 body{
@@ -80,7 +80,11 @@ blockquote{
 }
 
 /* start of letter print design*/
-@media (min-width: 2550px){
+@media (min-width: 2550px) {
+    :root { background-color: white;}
+    font-size: 18px;
+    {padding: 0.5in;}
+    {margin-top: 1in;}
 
 }
 
