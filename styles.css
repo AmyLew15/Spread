@@ -3,16 +3,16 @@
     --line-height: 30px;
 }
 
-/*.parentbox{
-    display:flex;
-    flex-wrap:wrap;
-    position:absolute
-}*/
+
 
 * {
     box-sizing: border-box;
 }
 
+.ParentBox {
+    display: flex;
+    flex-direction: column;
+}
 
 body{
     font-size: var(--root-size);
@@ -65,7 +65,9 @@ p{
 	font-weight: 200px;
     margin-left: 16px;
     padding:var(--root-size);
-    /* max-width: 85%; */
+   
+
+
 }
 
 blockquote{
@@ -87,6 +89,28 @@ footer{
 @media (max-width: 355px) {
     h1 {
         font-size: calc(var(--root-size) * 5);
+    }
+}
+
+
+
+
+@media (max-width: 799px) {
+    p {
+        display: flex;
+        justify-content: flex-end;
+        max-width: 85%;
+    }
+}
+
+@media (min-width: 800px) {
+     p {
+        /* display: flex;
+        justify-content: center;
+        width: 100%; */
+        max-width: 65%;
+        margin: 0 auto;
+        align-items: center;
     }
 }
 
