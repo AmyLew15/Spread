@@ -3,11 +3,11 @@
     --line-height: 30px;
 }
 
-.parentbox{
+/*.parentbox{
     display:flex;
     flex-wrap:wrap;
     position:absolute
-}
+}*/
 
 body{
     font-size: var(--root-size);
