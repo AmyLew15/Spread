@@ -14,7 +14,6 @@ body{
     font-family: "Roboto";
     background-color: #FFFBF1;
     margin: auto;
-    display: flex;
     }
 
 
@@ -44,14 +43,14 @@ h3{
     line-height: calc(var(--root-size)*1.5);
 }
 
-section:nth-child(1){
+/* section:nth-child(1){
     font-family: "Big Shoulders Inline Display";
     font-size: calc(var(--root-size) * 5);
     font-weight: 900;
     text-align: right;
     position: relative;
     top: 60px
- }
+ } */
 
 p{
     color:rgb(0, 0, 0);
@@ -59,8 +58,8 @@ p{
 	line-height:var(--line-height);
 	font-weight: 200px;
     margin-left: 16px;
-    /* padding:var(--root-size); */
-    max-width: 85%;
+    padding:var(--root-size);
+    /* max-width: 85%; */
 }
 
 blockquote{
@@ -79,7 +78,7 @@ footer{
     padding: 20px;
 }
 /* start of mobile responsive design*/
-@media screen and (min-width: 390px) {
+/* @media screen and (min-width: 390px) {
     .title {
         display:block;
     }
@@ -92,22 +91,22 @@ footer{
         margin-top: 20px;
         text-align: right;
     }
-}
+} */
 
 /* start of desktop responsive design */
-@media (min-width: 1280px){
+/* @media (min-width: 1280px){
     .title{
         display:flex;
     }
-}
+} */
 
-/* start of letter print design*/
+/* start of letter print design
 @media (min-width: 2550px) {
     :root { background-color: white;}
     .title{
         display: flex;
     }
-}
+} */
 
 
 
