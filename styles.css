@@ -3,14 +3,20 @@
     --line-height: 30px;
 }
 
+.parentbox{
+    display:flex;
+    flex-wrap:wrap;
+    position:absolute
+}
+
 body{
     font-size: var(--root-size);
     font-family: "Roboto";
     background-color: #FFFBF1;
     margin: auto;
-    {display: flex;
-    flex-wrap:nowrap}
-}
+    display: flex;
+    }
+
 
 hgroup{
     background-color: #F9451D;
@@ -65,7 +71,7 @@ blockquote{
     border-top: 12px solid #F9451D;
     border-bottom: 12px solid #F9451D;
     padding: 40px;
-    {flex-direction: row-reverse;}
+    flex-direction: row-reverse;
 }
 
 footer{
