@@ -63,7 +63,7 @@ blockquote{
     text-align: right;
     border-top: 12px solid #F9451D;
     border-bottom: 12px solid #F9451D;
-    padding: var(--root-size);
+    padding: 60px;
     {flex-direction: row-reverse;}
 }
 
