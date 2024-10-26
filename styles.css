@@ -151,7 +151,7 @@ h3{
     }
     h5::after {
         content: '||||||||||||||||||';
-        letter-spacing: -20px;
+        letter-spacing: -3px;
     }
 
 blockquote{
