@@ -90,6 +90,13 @@ footer{
 }
 
 
+.footerChar
+{
+    font-size: 50px;
+    font-family: "Big Shoulders Inline Display";
+
+}
+
 @media (min-width: 200px){
     p{
         max-width: 100%;
@@ -165,7 +172,9 @@ blockquote{
 
 }
 
-
+.footerChar{
+    font-size: calc(var(--root-size) * 10);
+}
 
 }
 
