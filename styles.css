@@ -53,7 +53,7 @@ h3{
 
 h5{
     font-family: "Big Shoulders Inline Display";
-    font-size: calc(var(--root-size) * 2);
+    font-size: calc(var(--root-size) * 3);
     position: absolute;
     bottom: -30px;
 }
