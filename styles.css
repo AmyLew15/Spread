@@ -58,16 +58,9 @@ h5{
     bottom: -30px;
 }
 
-    /*max-width: 60%;/*
 
-/* section:nth-child(1){
-    font-family: "Big Shoulders Inline Display";
-    font-size: calc(var(--root-size) * 5);
-    font-weight: 900;
-    text-align: right;
-    position: relative;
-    top: 60px
- } */
+
+
 
 p{
     color:rgb(0, 0, 0);
@@ -171,6 +164,8 @@ blockquote{
     margin-bottom: 40px;
 
 }
+
+
 
 }
 
