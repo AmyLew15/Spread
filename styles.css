@@ -123,28 +123,17 @@ footer{
         margin: 0 auto;
         align-items: center;
     }
-}
-/* start of mobile responsive design*/
-/* @media screen and (min-width: 390px) {
-    .title {
-        display:block;
-    }
-    p{
-        margin: calc(var(--root-size)*4);
-        line-height: calc(var(--root-size)*1.8);
-        max-width: 65%;
-    }
-    blockquote{
-        margin-top: 20px;
-        text-align: right;
-    }
-} */
 
-/* start of desktop responsive design */
-/* @media (min-width: 1280px){
-    .title{
-        display:flex;
+    h1{
+        font-size: calc(var(--root-size) * 16);
+        line-height: calc(var(--root-size)*10);
+}
     }
-} */
+    h2 {
+        font-size: calc(var(--root-size) * 3);
+        padding-top: 80px;
+    }
+
+
 
 /* start of letter print design
