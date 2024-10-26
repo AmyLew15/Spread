@@ -126,7 +126,7 @@ footer{
 
     h1{
         font-size: calc(var(--root-size) * 16);
-        line-height: calc(var(--root-size)*10);
+        line-height: calc(var(--root-size)*16);
 }
     }
     h2 {
