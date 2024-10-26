@@ -25,6 +25,7 @@ body{
 hgroup{
     background-color: #F9451D;
     padding: 20px;
+    position: relative;
    
 }
 h1{
@@ -47,7 +48,16 @@ h3{
     font-size: calc(var(--root-size) * .75);
     font-weight:500px;
     line-height: calc(var(--root-size)*1.5);
+    padding-bottom: 30px;
 }
+
+h5{
+    font-family: "Big Shoulders Inline Display";
+    font-size: calc(var(--root-size) * 2);
+    position: absolute;
+    bottom: -30px;
+}
+
     /*max-width: 60%;/*
 
 /* section:nth-child(1){
@@ -128,11 +138,23 @@ footer{
         font-size: calc(var(--root-size) * 16);
         line-height: calc(var(--root-size)*16);
 }
-    }
     h2 {
         font-size: calc(var(--root-size) * 3);
-        padding-top: 80px;
+        padding-top: 20px;
     }
+
+h3{
+    font-size: calc(var(--root-size) * 1);
+    padding-bottom: 60px;
+
+}
+
+    h5 {
+        font-size: calc(var(--root-size) * 6);
+            position: absolute;
+            bottom: -60px;
+    }
+}
 
 
 
