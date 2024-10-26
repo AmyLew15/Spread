@@ -149,17 +149,7 @@ h3{
 
 }
 
-    h5 {
-        font-size: calc(var(--root-size) * 6);
-            position: absolute;
-            bottom: -60px;
-            transform: rotate(90deg);
-            transform-origin: left bottom;
-    }
-    h5::after {
-        content: '||||||||||||||||||';
-        letter-spacing: -3px;
-    }
+   
 
 blockquote{
     font-size: calc(var(--root-size) * 2);
@@ -169,6 +159,24 @@ blockquote{
     border-bottom: 15px solid #F9451D;
     margin-top: 40px;
     margin-bottom: 40px;
+
+}
+
+
+@media (min-width: 950px) {
+
+    h5 {
+        font-size: calc(var(--root-size) * 6);
+            position: absolute;
+            bottom: 60px;
+            transform: rotate(90deg);
+            transform-origin: left bottom;
+            margin-top: 30px;
+    }
+    h5::after {
+        content: '||||||||||||||||||';
+        letter-spacing: -3px;
+    }
 
 }
 
