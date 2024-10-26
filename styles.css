@@ -75,7 +75,7 @@ p{
 	line-height:var(--line-height);
 	font-weight: 200px;
     margin-left: 16px;
-    padding:var(--root-size);
+    padding-top:calc(var(--root-size) * 1.5);
     /* max-width: 85%; */
    
 }
@@ -97,7 +97,7 @@ footer{
 }
 
 
-@media (min-width: 300px){
+@media (min-width: 200px){
     p{
         max-width: 100%;
     }
