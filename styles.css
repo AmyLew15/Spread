@@ -161,6 +161,17 @@ h3{
         letter-spacing: -20px;
     }
 
+blockquote{
+    font-size: calc(var(--root-size) * 2);
+    margin-left: 30vw;
+    max-width: 65vw;
+    border-top: 15px solid #F9451D;
+    border-bottom: 15px solid #F9451D;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+
 }
 
 
