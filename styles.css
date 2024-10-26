@@ -153,7 +153,14 @@ h3{
         font-size: calc(var(--root-size) * 6);
             position: absolute;
             bottom: -60px;
+            transform: rotate(90deg);
+            transform-origin: left bottom;
     }
+    h5::after {
+        content: '||||||||||||||||||';
+        letter-spacing: -20px;
+    }
+
 }
 
 
