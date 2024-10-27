@@ -81,8 +81,6 @@ blockquote{
     font-size: calc(var(--root-size) * 1.5);
     text-align: right;
     /* border-width: flex; */
-    border-top: 12px solid #F9451D;
-    border-bottom: 12px solid #F9451D;
     padding: 40px;
     /* flex-direction: row-reverse; */
 }
@@ -106,6 +104,8 @@ footer{
     blockquote{
         margin-top: calc(var(--root-size) * .5);
         margin-bottom: calc(var(--root-size) * .5);
+        border-top: 12px solid #F9451D;
+        border-bottom: 12px solid #F9451D;
     }
 }
 
@@ -120,6 +120,8 @@ footer{
     blockquote{
         margin-top: calc(var(--root-size) * .75);
         margin-bottom: calc(var(--root-size) * .75);
+        border-top: 12px solid #F9451D;
+        border-bottom: 12px solid #F9451D;
     }
 }
 
@@ -149,7 +151,11 @@ footer{
         line-height: calc(var(--root-size)*14);
         text-align: right;
         margin-right: 45px;
-}
+          }
+
+
+
+
     h2 {
         font-size: calc(var(--root-size) * 2);
         padding-top: 20px;
@@ -163,21 +169,56 @@ h3{
     padding-bottom: 60px;
     font-family: 'Oswald';
     text-align: left;
+    opacity: 0.8;
+    font-weight: 100;
 
 }
 
-   
 
 blockquote{
     font-size: calc(var(--root-size) * 2);
     margin-left: 30vw;
     max-width: 65vw;
-    border-top: 15px solid #F9451D;
-    border-bottom: 15px solid #F9451D;
+    /* border-top: 15px solid #F9451D; */
+    /* border-bottom: 15px solid #F9451D; */
     margin-top: 40px;
     margin-bottom: 40px;
+    padding: 40px;
+    border: none;
+    transition: border-color 0.5s ease;
 
 }
+
+blockquote::before {
+    top: 20px; /* Adjust as needed for vertical padding */
+    padding: 0 20px; /* Add horizontal padding */
+}
+
+blockquote::after {
+    bottom: 20px; /* Adjust as needed for vertical padding */
+    padding: 0 20px; /* Add horizontal padding */
+}
+
+
+blockquote::before,
+blockquote::after {
+    content: ''; /* Necessary for pseudo-elements */
+    display: block;
+    height: 12px; /* Same height as the border */
+    background-color: #F9451D; /* Line color */
+    width: 0; /* Start with 0 width */
+    transition: width 0.5s ease; /* Smooth transition for width */
+    right: 0;
+}
+
+/* On hover, grow the border */
+blockquote:hover::before,
+blockquote:hover::after {
+    width: 100%; /* End width */
+}
+
+
+
 
 
 @media (min-width: 950px) {
@@ -195,6 +236,8 @@ blockquote{
         letter-spacing: -3px;
     }
 
+    
+
 }
 
 .footerChar{
@@ -202,6 +245,16 @@ blockquote{
 }
 
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
