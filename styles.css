@@ -9,10 +9,10 @@
     box-sizing: border-box;
 }
 
-.ParentBox {
+/* .ParentBox {
     display: flex;
     flex-direction: column;
-}
+} */
 
 body{
     font-size: var(--root-size);
