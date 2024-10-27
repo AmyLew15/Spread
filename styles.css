@@ -226,7 +226,6 @@ blockquote:hover::after {
             transform: rotate(90deg);
             transform-origin: left bottom;
             margin-top: 30px;
-            /* animation: fadeInOut 3s ease-in-out infinite;  */
     }
   
     h5::after {
@@ -236,24 +235,21 @@ blockquote:hover::after {
     }
 
 }
-
-
 }
 
 .mirror {
-    display: inline-block; /* Required for the transform to work correctly */
-    animation: mirrorEffect 1s infinite alternate; /* Infinite animation */
+    display: inline-block; 
+    animation: mirrorEffect 1s infinite alternate; 
 }
 
 @keyframes mirrorEffect {
     0% {
-        transform: scaleX(1); /* Normal position */
+        transform: scaleX(1); 
     }
     100% {
-        transform: scaleX(-1); /* Mirrored position */
+        transform: scaleX(-1); 
     }
 }
-
 
 
 .footerChar{
