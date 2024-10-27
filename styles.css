@@ -7,10 +7,6 @@
     box-sizing: border-box;
 }
 
-/* .ParentBox {
-    display: flex;
-    flex-direction: column;
-} */
 
 body{
     font-size: var(--root-size);
@@ -26,6 +22,7 @@ hgroup{
     position: relative;
    
 }
+
 h1{
     font-family: "Big Shoulders Inline Display";
     font-size: calc(var(--root-size) * 8);
@@ -80,9 +77,7 @@ blockquote{
     font-family: "Oswald";
     font-size: calc(var(--root-size) * 1.5);
     text-align: right;
-    /* border-width: flex; */
     padding: 40px;
-    /* flex-direction: row-reverse; */
 }
 
 footer{
@@ -131,9 +126,12 @@ footer{
         justify-content: flex-end;
         max-width: 85%;
     }
-
    
 }
+
+
+
+
 @media (min-width: 800px) {
      p {
         /* display: flex;
@@ -230,21 +228,41 @@ blockquote:hover::after {
             transform: rotate(90deg);
             transform-origin: left bottom;
             margin-top: 30px;
+            /* animation: fadeInOut 3s ease-in-out infinite;  */
     }
+  
     h5::after {
         content: '||||||||||||||||||';
         letter-spacing: -3px;
+    
     }
 
-    
+}
+
 
 }
+
+.mirror {
+    display: inline-block; /* Required for the transform to work correctly */
+    animation: mirrorEffect 1s infinite alternate; /* Infinite animation */
+}
+
+@keyframes mirrorEffect {
+    0% {
+        transform: scaleX(1); /* Normal position */
+    }
+    100% {
+        transform: scaleX(-1); /* Mirrored position */
+    }
+}
+
+
 
 .footerChar{
     font-size: calc(var(--root-size) * 10);
 }
 
-}
+
 
 
 
