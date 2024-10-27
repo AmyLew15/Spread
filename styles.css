@@ -3,8 +3,6 @@
     --line-height: 30px;
 }
 
-
-
 * {
     box-sizing: border-box;
 }
@@ -59,15 +57,13 @@ h5{
 }
 
 
-
-
-
 p{
     color:rgb(0, 0, 0);
 	font-size: 20px;
 	line-height:var(--line-height);
 	font-weight: 200px;
     margin-left: 16px;
+    margin-bottom: 20px;
     padding-top:calc(var(--root-size) * 1.5);
     /* max-width: 85%; */
    
@@ -89,7 +85,6 @@ footer{
     padding: 20px;
 }
 
-
 .footerChar
 {
     font-size: 50px;
@@ -99,7 +94,11 @@ footer{
 
 @media (min-width: 200px){
     p{
-        max-width: 100%;
+        max-width: fit-content;
+    }
+    blockquote{
+        margin-top: calc(var(--root-size) * .5);
+        margin-bottom: calc(var(--root-size) * .5);
     }
 }
 
@@ -110,6 +109,10 @@ footer{
     }
     hgroup {
         width: fit-content;
+    }
+    blockquote{
+        margin-top: calc(var(--root-size) * .75);
+        margin-bottom: calc(var(--root-size) * .75);
     }
 }
 
