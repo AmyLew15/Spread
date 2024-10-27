@@ -188,34 +188,32 @@ blockquote{
 }
 
 blockquote::before {
-    top: 20px; /* Adjust as needed for vertical padding */
-    padding: 0 20px; /* Add horizontal padding */
+    top: 40px; 
+    padding: 0 40px; 
 }
 
 blockquote::after {
-    bottom: 20px; /* Adjust as needed for vertical padding */
-    padding: 0 20px; /* Add horizontal padding */
+    bottom: 40px; 
+    padding: 0 40px; 
 }
 
 
 blockquote::before,
 blockquote::after {
-    content: ''; /* Necessary for pseudo-elements */
+    content: ''; 
     display: block;
-    height: 12px; /* Same height as the border */
-    background-color: #F9451D; /* Line color */
-    width: 0; /* Start with 0 width */
-    transition: width 0.5s ease; /* Smooth transition for width */
+    height: 12px; 
+    background-color: #F9451D; 
+    width: 0; 
+    transition: width 0.5s ease;
     right: 0;
 }
 
-/* On hover, grow the border */
+
 blockquote:hover::before,
 blockquote:hover::after {
-    width: 100%; /* End width */
+    width: 100%; 
 }
-
-
 
 
 
