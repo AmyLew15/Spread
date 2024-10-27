@@ -120,6 +120,14 @@ footer{
     }
 }
 
+@media (min-width:350px) and (max-width:450px){
+    h1 {
+        font-size: calc(var(--root-size) * 6);
+    }
+
+}
+
+
 @media (max-width: 799px) {
     p {
         display: flex;
