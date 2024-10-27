@@ -49,6 +49,11 @@ h3{
     padding-bottom: 30px;
 }
 
+
+.author, .contributor {
+    display: block;
+}
+
 h5{
     font-family: "Big Shoulders Inline Display";
     font-size: calc(var(--root-size) * 3);
@@ -156,7 +161,7 @@ h3{
     padding-bottom: 60px;
     font-family: 'Oswald';
     text-align: left;
-    max-width: 20%;
+    /* max-width: 20%; */
 
 }
 
