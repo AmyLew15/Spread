@@ -141,6 +141,7 @@ footer{
         font-size: calc(var(--root-size) * 18);
         line-height: calc(var(--root-size)*18);
         text-align: right;
+        margin-right: 45px;
 }
     h2 {
         font-size: calc(var(--root-size) * 3);
