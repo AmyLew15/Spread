@@ -301,7 +301,7 @@ blockquote:hover::after {
     align-items: center;
 }
 .footerChar{
-    font-size: calc(var(--root-size) * 10);
+    font-size: calc(var(--root-size) * 7);
     margin: 0;
     padding: 0;
 }
@@ -309,11 +309,6 @@ blockquote:hover::after {
 /* footer{
     width: fit-content;
 } */
-
-
-
-
-
 
 
 
