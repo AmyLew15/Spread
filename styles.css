@@ -12,7 +12,6 @@ body{
     font-size: var(--root-size);
     font-family: "Roboto";
     background-color: #FFFBF1;
-    /* margin: auto; */
     }
 
 
@@ -20,25 +19,25 @@ hgroup{
     background-color: #F9451D;
     padding: 20px;
     position: relative;
-   
 }
 
 h1{
     font-family: "Big Shoulders Inline Display";
-    font-size: calc(var(--root-size) * 8);
-    font-weight:900px;
+    font-size: calc(var(--root-size) * 3);
+    font-weight:900;
+    text-align: center;
     display: block;
-    margin-top: -40px;
+    margin-top: -30px;
 }
 
 h2{
     font-family: "Oswald";
-    font-size: calc(var(--root-size) * 1.5);
-    font: weight 400px;
+    font-size: calc(var(--root-size) * 1.25);
+    font: weight 400;
+    text-align: center;
 }
 
 h3{
-    font-size: var(--root-size);
     font-family: "Roboto";
     font-size: calc(var(--root-size) * .75);
     font-weight:500px;
@@ -55,8 +54,12 @@ h3{
 h5{
     font-family: "Big Shoulders Inline Display";
     font-size: calc(var(--root-size) * 3);
+    font-weight:900;
+    text-align: center;
+    display: block;
     position: absolute;
-    bottom: -30px;
+    margin-left: -38px;
+    bottom: -40px;
 }
 
 
@@ -80,6 +83,7 @@ blockquote{
 footer{
     background-color: #F9451D;
     padding: 20px;
+    
 }
 
 .footerChar
@@ -89,9 +93,14 @@ footer{
 
 }
 
-@media (min-width: 200px){
-    p{
-        max-width: fit-content;
+
+@media (min-width: 500px) {
+    h1 {
+        font-size: calc(var(--root-size) * 3.5);
+        text-align: center;
+    }
+    hgroup {
+        width: fit-content;
     }
     blockquote{
         margin-top: calc(var(--root-size) * .5);
@@ -101,28 +110,12 @@ footer{
     }
 }
 
-
-@media (max-width: 355px) {
-    h1 {
-        font-size: calc(var(--root-size) * 5);
-    }
-    hgroup {
-        width: fit-content;
-    }
-    blockquote{
-        margin-top: calc(var(--root-size) * .75);
-        margin-bottom: calc(var(--root-size) * .75);
-        border-top: 12px solid #F9451D;
-        border-bottom: 12px solid #F9451D;
-    }
-}
-
-@media (min-width:350px) and (max-width:450px){
+/*@media (min-width:350px) and (max-width:450px){
     h1 {
         font-size: calc(var(--root-size) * 6);
     }
 
-}
+}*/
 
 
 @media (max-width: 799px) {
