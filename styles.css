@@ -56,7 +56,7 @@ h3{
 h5{
     font-family: "Big Shoulders Inline Display";
     font-size: calc(var(--root-size) * 3);
-    position: absolute;
+     position: absolute;
     bottom: -30px;
 }
 
@@ -147,7 +147,7 @@ footer{
         width: 100%; */
         /* display: grid;
         width: fit-content; */
-        max-width: 65%;
+        max-width: 60%;
         margin: 0 auto;
         align-items: center;
     }
@@ -242,6 +242,11 @@ blockquote:hover::after {
     
     }
 
+    p{
+        max-width: 55%;
+        padding-bottom: var(--root-size);
+    }
+
 }
 }
 
@@ -258,6 +263,8 @@ blockquote:hover::after {
         transform: scaleX(-1); 
     }
 }
+
+
 
 
 .footerChar{
