@@ -224,6 +224,24 @@ blockquote:hover::after {
 }
 
 
+.FooterTextLarge {
+    font-family: 'Oswald';
+    font-size: var(--root-size)*8;
+    text-align: center;
+    align-items: center;
+}
+
+.FooterTextSmall{
+    font-family: 'Oswald';
+    font-size: var(--root-size)*2;
+    text-align: center;
+    align-items: center;
+}
+
+
+}
+
+
 
 @media (min-width: 950px) {
 
@@ -264,14 +282,33 @@ blockquote:hover::after {
     }
 }
 
-
-
-
-.footerChar{
-    font-size: calc(var(--root-size) * 10);
+.FooterTextLarge {
+    font-family: 'Oswald';
+    font-size: var(--root-size)*1.5;
+    text-align: center;
+    align-items: center;
 }
 
+.FooterTextSmall{
+    font-family: 'Oswald';
+    font-size: var(--root-size)*0.5;
+    text-align: center;
+    align-items: center;
+}
 
+.footerCharSmall{
+    font-size: calc(var(--root-size) * 2);
+    align-items: center;
+}
+.footerChar{
+    font-size: calc(var(--root-size) * 10);
+    margin: 0;
+    padding: 0;
+}
+
+/* footer{
+    width: fit-content;
+} */
 
 
 
