@@ -28,6 +28,7 @@ h2{
     font-family: "Oswald";
     font-size: calc(var(--root-size) * 1.5);
     font: weight 400;
+    text-wrap: nowrap;
     text-align: center;
 }
 
@@ -35,6 +36,7 @@ h3{
     font-family: "Oswald";
     font-size: calc(var(--root-size));
     font-weight:300;
+    text-wrap: nowrap;
     padding-bottom: 30px;
     text-align:left;
     margin-top: 10px;
@@ -48,6 +50,7 @@ h5{
     font-family: "Big Shoulders Inline Display";
     font-size: calc(var(--root-size) * 3);
     font-weight:900;
+    text-wrap: nowrap;
     text-align: center;
     display: block;
     position: absolute;
