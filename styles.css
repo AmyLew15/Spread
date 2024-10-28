@@ -19,6 +19,7 @@ h1{
     font-family: "Big Shoulders Inline Display";
     font-size: calc(var(--root-size) * 3.25);
     font-weight:900;
+    text-wrap: nowrap;
     text-align: center;
     margin-top: -36px;
 }
