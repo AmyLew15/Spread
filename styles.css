@@ -1,12 +1,7 @@
 :root{
-    --root-size: 20px;
+    --root-size: 18px;
     --line-height: 30px;
 }
-
-* {
-    box-sizing: border-box;
-}
-
 
 body{
     font-size: var(--root-size);
@@ -14,42 +9,39 @@ body{
     background-color: #FFFBF1;
     }
 
-
 hgroup{
     background-color: #F9451D;
-    padding: 20px;
+    padding: 24px;
     position: relative;
 }
 
 h1{
     font-family: "Big Shoulders Inline Display";
-    font-size: calc(var(--root-size) * 3);
+    font-size: calc(var(--root-size) * 3.25);
     font-weight:900;
     text-align: center;
-    display: block;
-    margin-top: -30px;
+    margin-top: -36px;
 }
 
 h2{
     font-family: "Oswald";
-    font-size: calc(var(--root-size) * 1.25);
+    font-size: calc(var(--root-size) * 1.5);
     font: weight 400;
     text-align: center;
 }
 
 h3{
-    font-family: "Roboto";
-    font-size: calc(var(--root-size) * .75);
-    font-weight:500px;
-    line-height: calc(var(--root-size)*1.5);
+    font-family: "Oswald";
+    font-size: calc(var(--root-size));
+    font-weight:300;
     padding-bottom: 30px;
+    text-align:left;
+    margin-top: 10px;
 }
-
 
 .author, .contributor {
     display: block;
 }
-
 
 h5{
     font-family: "Big Shoulders Inline Display";
@@ -59,25 +51,27 @@ h5{
     display: block;
     position: absolute;
     margin-left: -38px;
-    bottom: -40px;
+    bottom: -32px;
 }
-
 
 p{
     color:rgb(0, 0, 0);
-	font-size: 20px;
+	font-size: 18px;
 	line-height:var(--line-height);
 	font-weight: 200px;
-    margin-left: 16px;
+    text-align: left;
+    margin-top: 46px;
     margin-bottom: 20px;
-    padding-top:calc(var(--root-size) * 1.5);
+    padding:calc(var(--root-size) * 1.5);
 }
 
 blockquote{
     font-family: "Oswald";
     font-size: calc(var(--root-size) * 1.5);
     text-align: right;
-    padding: 40px;
+    padding:calc(var(--root-size) * 1.5);
+    border-top: 12px solid #F9451D;
+    border-bottom: 12px solid #F9451D;
 }
 
 footer{
@@ -93,42 +87,27 @@ footer{
 
 }
 
-
+/*Start of Media Sizing*/
 @media (min-width: 500px) {
-    h1 {
-        font-size: calc(var(--root-size) * 3.5);
-        text-align: center;
-    }
     hgroup {
         width: fit-content;
     }
     blockquote{
         margin-top: calc(var(--root-size) * .5);
         margin-bottom: calc(var(--root-size) * .5);
-        border-top: 12px solid #F9451D;
-        border-bottom: 12px solid #F9451D;
     }
 }
 
-/*@media (min-width:350px) and (max-width:450px){
-    h1 {
-        font-size: calc(var(--root-size) * 6);
-    }
-
-}*/
-
-
 @media (max-width: 799px) {
+    hgroup{
+        width: fit-content;
+    }
     p {
         display: flex;
         justify-content: flex-end;
         max-width: 85%;
     }
-   
 }
-
-
-
 
 @media (min-width: 800px) {
      p {
