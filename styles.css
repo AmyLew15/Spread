@@ -33,7 +33,7 @@ h2{
     font-size: calc(var(--root-size) * 1.5);
     font: weight 400;
     text-wrap: nowrap;
-    text-align: right;
+    text-align: left;
 }
 
 h3{
