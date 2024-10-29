@@ -21,9 +21,9 @@ hgroup{
 
 h1{
     font-family: "Big Shoulders Inline Display";
-    font-size: calc(var(--root-size) * 3.25);
+    font-size: calc(var(--root-size) * 6);
     font-weight:900;
-    text-wrap: nowrap;
+    /* text-wrap: nowrap; */
     text-align: center;
     margin-top: -36px;
 }
@@ -33,7 +33,7 @@ h2{
     font-size: calc(var(--root-size) * 1.5);
     font: weight 400;
     text-wrap: nowrap;
-    text-align: center;
+    text-align: right;
 }
 
 h3{
@@ -104,10 +104,13 @@ footer{
     }
 }
 
+
+/*Footer Styling*/
+
 .backtotop{
     color:#050100;
     padding: 8px 14px 8px 14px;
-    border:#050100 2px solid;
+    /* border:#050100 2px solid; */
     border-radius: 5px;
     align-self: center;
 }
@@ -259,7 +262,7 @@ footer{
     }
 }
 
-/*@media (min-width: 950px) {
+@media (min-width: 950px) {
 
     h5 {
         font-size: calc(var(--root-size) * 6);
@@ -279,3 +282,5 @@ footer{
     p{
         max-width: 55%;
         padding-bottom: var(--root-size);
+    }
+}
