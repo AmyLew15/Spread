@@ -107,14 +107,8 @@ footer{
     text-wrap: nowrap;
     text-align: center;
 }
-.footerChar
-{
-    font-size: 50px;
-    font-family: "Big Shoulders Inline Display";
 
-}
-
-.FooterTextLarge, .FooterTextSmall {
+.Classname {
     font-family: 'Oswald';
     font-size: calc(var(--root-size) * 1.5);
     font: weight 400;
@@ -123,22 +117,13 @@ footer{
     align-items: center;
 }
 
-.FooterTextSmall{
+.Partners{
     font-family: "Oswald";
     font-size: calc(var(--root-size));
     font-weight:300;
     text-wrap: nowrap;
 }
 
-.footerCharSmall{
-    font-size: calc(var(--root-size) * 2);
-    align-items: center;
-}
-.footerChar{
-    font-size: calc(var(--root-size) * 7);
-    margin: 0;
-    padding: 0;
-}
 
 /*Start of Media Sizing*/
 @media (min-width: 500px) {
