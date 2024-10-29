@@ -85,9 +85,7 @@ blockquote{
 
 footer{
     background-color: #F9451D;
-    justify-content: space-between;
-    text-align: center;
-    align-items: center;
+    width: 100vw;
     padding: 20px;
     padding-bottom: 0px;
 }
@@ -106,8 +104,12 @@ footer{
     }
 }
 
-.a{
-    border:aqua
+.backtotop{
+    color:#050100;
+    padding: 8px 14px 8px 14px;
+    border:#050100 2px solid;
+    border-radius: 5px;
+    align-self: center;
 }
 
 .Classname {
