@@ -162,9 +162,9 @@ footer{
 }
 
 @media (min-width: 500px) {
-    hgroup {
+    /* hgroup {
         width: fit-content;
-    }
+    } */
 
     h1{
         font-size: calc(var(--root-size) * 8);
@@ -205,9 +205,9 @@ blockquote{
 
 @media (min-width: 800px) {
 
-    hgroup{
+    /* hgroup{
         width: fit-content;
-    }
+    } */
 
      p {
         display: flex;
