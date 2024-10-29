@@ -176,11 +176,19 @@ footer{
         display: flex;
         justify-content: flex-end;
         max-width: 90%;
+        padding-left:40px;
     }
 
     p:first-of-type {
-        padding: 40px;
+        padding-top: 40px;
       }
+
+blockquote{
+    margin-left: 30vw;
+    max-width: 65vw;
+    text-align: right;
+    padding-right: 0;
+    margin-right: 0;
 
 }
 
@@ -281,16 +289,6 @@ footer{
 
 }
 
-@keyframes mirrorEffect {
-    0% {
-        transform: scaleX(1); 
-    }
-    100% {
-        transform: scaleX(-1); 
-    }
-}
-
-
 @media (min-width: 950px) {
 
     h5 {
@@ -311,5 +309,15 @@ footer{
     p{
         max-width: 70%;
         padding-bottom: var(--root-size);
+    }
+}
+
+/* Animation of h1 */
+@keyframes mirrorEffect {
+    0% {
+        transform: scaleX(1); 
+    }
+    100% {
+        transform: scaleX(-1); 
     }
 }
