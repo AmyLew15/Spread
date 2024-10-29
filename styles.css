@@ -78,6 +78,7 @@ p:first-of-type {
   }
 
 blockquote{
+    position: relative; /* Set relative positioning */
     font-family: "Oswald";
     font-size: calc(var(--root-size) * 1.5);
     text-wrap: pretty;
@@ -85,6 +86,14 @@ blockquote{
     padding:calc(var(--root-size) * 1.5);
     border-top: 12px solid #F9451D;
     border-bottom: 12px solid #F9451D;
+
+}
+
+.blocklines{
+    position: absolute; /* Absolute positioning */
+    right: 0; /* Adjust as necessary */
+    bottom: -32px; /* Adjust as necessary */
+    font-size: calc(var(--root-size) * 2); /* Use 'calc' for consistency */
 }
 
 footer{
