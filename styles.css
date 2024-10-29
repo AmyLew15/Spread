@@ -59,7 +59,7 @@ h5{
 }
 
 p{
-    color:#050100);
+    color:#050100;
 	font-size: 18px;
 	line-height:var(--line-height);
 	font-weight: 200px;
@@ -81,15 +81,16 @@ blockquote{
 
 footer{
     background-color: #F9451D;
-    display: flex;
     justify-content: space-between;
+    text-align: center;
     align-items: center;
     padding: 20px;
+    padding-bottom: 0px;
 }
 
 .mirror {
     display: inline-block; 
-    animation: mirrorEffect 1s infinite alternate; 
+    animation: mirrorEffect 2s infinite alternate; 
 }
 
 @keyframes mirrorEffect {
@@ -100,12 +101,9 @@ footer{
         transform: scaleX(-1); 
     }
 }
-.TitleRepeat{
-    font-family: "Big Shoulders Inline Display";
-    font-size: calc(var(--root-size) * 3.25);
-    font-weight:900;
-    text-wrap: nowrap;
-    text-align: center;
+
+.a{
+    border:aqua
 }
 
 .Classname {
@@ -122,6 +120,16 @@ footer{
     font-size: calc(var(--root-size));
     font-weight:300;
     text-wrap: nowrap;
+    text-align: center;
+}
+
+.TitleRepeat{
+    font-family: "Big Shoulders Inline Display";
+    font-size: calc(var(--root-size) * 3.25);
+    font-weight:900;
+    text-wrap: nowrap;
+    text-align: center;
+    margin-bottom: -34px;
 }
 
 
@@ -265,5 +273,3 @@ footer{
     p{
         max-width: 55%;
         padding-bottom: var(--root-size);
-    }
-}
