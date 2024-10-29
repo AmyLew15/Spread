@@ -10,9 +10,14 @@ body{
 }
 
 hgroup{
-    background-color: #F9451D;
     padding: 24px;
     position: relative;
+}
+
+.headerback {
+    background-color: #F9451D;
+    width: 100vw;
+    padding-top: 24px;
 }
 
 h1{
