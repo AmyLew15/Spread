@@ -81,6 +81,9 @@ blockquote{
 
 footer{
     background-color: #F9451D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
 }
 
@@ -97,7 +100,13 @@ footer{
         transform: scaleX(-1); 
     }
 }
-
+.TitleRepeat{
+    font-family: "Big Shoulders Inline Display";
+    font-size: calc(var(--root-size) * 3.25);
+    font-weight:900;
+    text-wrap: nowrap;
+    text-align: center;
+}
 .footerChar
 {
     font-size: 50px;
