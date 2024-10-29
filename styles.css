@@ -90,10 +90,12 @@ blockquote{
 }
 
 .blocklines{
-    position: absolute; /* Absolute positioning */
-    right: 0; /* Adjust as necessary */
-    bottom: -32px; /* Adjust as necessary */
-    font-size: calc(var(--root-size) * 2); /* Use 'calc' for consistency */
+    position: absolute; 
+    right: var(--root-size); 
+    bottom: -32px; 
+    font-size: calc(var(--root-size) * 2); 
+    font-family: "Big Shoulders Inline Display";
+    
 }
 
 footer{
@@ -281,6 +283,10 @@ blockquote{
         width: 100%; 
     }
 
+    .blocklines{
+        opacity: 0;
+        
+    }
 
     .FooterTextLarge {
         font-family: 'Oswald';
@@ -318,8 +324,21 @@ blockquote{
     p{
         max-width: 70%;
         padding-bottom: var(--root-size);
+        font-size: calc(var(--root-size)*1.2);
+        line-height: calc(var(--line-height)*1.2);
+    }
+
+    .blocklines{
+        opacity: 0;
     }
 }
+
+@media (min-width: 1260px) {
+    p{
+        max-width: 65%;
+    }
+}
+ 
 
 /* Animation of h1 */
 @keyframes mirrorEffect {
