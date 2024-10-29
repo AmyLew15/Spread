@@ -7,7 +7,7 @@ body{
     font-size: var(--root-size);
     font-family: "Roboto";
     background-color: #FFFBF1;
-    }
+}
 
 hgroup{
     background-color: #F9451D;
@@ -59,12 +59,12 @@ h5{
 }
 
 p{
-    color:rgb(0, 0, 0);
+    color:#050100);
 	font-size: 18px;
 	line-height:var(--line-height);
 	font-weight: 200px;
+    text-wrap: pretty;
     text-align: left;
-    margin-top: 46px;
     margin-bottom: 20px;
     padding:calc(var(--root-size) * 1.5);
 }
@@ -72,6 +72,7 @@ p{
 blockquote{
     font-family: "Oswald";
     font-size: calc(var(--root-size) * 1.5);
+    text-wrap: pretty;
     text-align: right;
     padding:calc(var(--root-size) * 1.5);
     border-top: 12px solid #F9451D;
@@ -81,7 +82,20 @@ blockquote{
 footer{
     background-color: #F9451D;
     padding: 20px;
-    
+}
+
+.mirror {
+    display: inline-block; 
+    animation: mirrorEffect 1s infinite alternate; 
+}
+
+@keyframes mirrorEffect {
+    0% {
+        transform: scaleX(1); 
+    }
+    100% {
+        transform: scaleX(-1); 
+    }
 }
 
 .footerChar
@@ -89,6 +103,32 @@ footer{
     font-size: 50px;
     font-family: "Big Shoulders Inline Display";
 
+}
+
+.FooterTextLarge, .FooterTextSmall {
+    font-family: 'Oswald';
+    font-size: calc(var(--root-size) * 1.5);
+    font: weight 400;
+    text-wrap: nowrap;
+    text-align: center;
+    align-items: center;
+}
+
+.FooterTextSmall{
+    font-family: "Oswald";
+    font-size: calc(var(--root-size));
+    font-weight:300;
+    text-wrap: nowrap;
+}
+
+.footerCharSmall{
+    font-size: calc(var(--root-size) * 2);
+    align-items: center;
+}
+.footerChar{
+    font-size: calc(var(--root-size) * 7);
+    margin: 0;
+    padding: 0;
 }
 
 /*Start of Media Sizing*/
@@ -102,7 +142,7 @@ footer{
     }
 }
 
-@media (max-width: 799px) {
+@media (min-width: 744px) {
     hgroup{
         width: fit-content;
     }
@@ -113,7 +153,7 @@ footer{
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1280px) {
      p {
         max-width: 60%;
         margin: 0 auto;
@@ -201,10 +241,6 @@ footer{
 
 
 
-.mirror {
-    display: inline-block; 
-    animation: mirrorEffect 1s infinite alternate; 
-}
 
 @keyframes mirrorEffect {
     0% {
@@ -215,31 +251,7 @@ footer{
     }
 }
 
-.FooterTextLarge, .FooterTextSmall {
-    font-family: 'Oswald';
-    font-size: var(--root-size)*1.5;
-    text-align: center;
-    align-items: center;
-}
-
-.FooterTextSmall{
-    font-size: var(--root-size)*0.5;
-}
-
-.footerCharSmall{
-    font-size: calc(var(--root-size) * 2);
-    align-items: center;
-}
-.footerChar{
-    font-size: calc(var(--root-size) * 7);
-    margin: 0;
-    padding: 0;
-}
-
-}
-
-
-@media (min-width: 950px) {
+/*@media (min-width: 950px) {
 
     h5 {
         font-size: calc(var(--root-size) * 6);
@@ -260,5 +272,4 @@ footer{
         max-width: 55%;
         padding-bottom: var(--root-size);
     }
-
 }
