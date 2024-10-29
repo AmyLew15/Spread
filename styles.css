@@ -69,9 +69,14 @@ p{
 	font-weight: 200px;
     text-wrap: pretty;
     text-align: left;
-    margin-bottom: 20px;
-    padding:calc(var(--root-size) * 1.5);
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: 12px;
+    padding:calc(var(--root-size) *0.5);
 }
+p:first-of-type {
+    padding: 24px;
+  }
 
 blockquote{
     font-family: "Oswald";
@@ -143,40 +148,53 @@ footer{
 
 
 /*Start of Media Sizing*/
+
+@media (min-width:350px) and (max-width:450px){
+    h1 {
+        font-size: calc(var(--root-size) * 6);
+    }
+
+}
+
 @media (min-width: 500px) {
     hgroup {
         width: fit-content;
     }
+
+    h1{
+        font-size: calc(var(--root-size) * 8);
+    }
+    
+
     blockquote{
         margin-top: calc(var(--root-size) * .5);
         margin-bottom: calc(var(--root-size) * .5);
     }
 }
 
-@media (min-width: 744px) {
+
+
+@media (min-width: 800px) {
+
     hgroup{
         width: fit-content;
     }
-    p {
+
+     p {
         display: flex;
         justify-content: flex-end;
-        max-width: 85%;
-    }
-}
-
-@media (min-width: 1280px) {
-     p {
         max-width: 60%;
         margin: 0 auto;
         align-items: center;
     }
 
     h1{
-        font-size: calc(var(--root-size) * 14);
-        line-height: calc(var(--root-size)* 14);
+        font-size: calc(var(--root-size) * 16);
+        line-height: calc(var(--root-size)*14);
         text-align: right;
         margin-right: 45px;
           }
+
 
     h2 {
         font-size: calc(var(--root-size) * 2);
@@ -250,7 +268,7 @@ footer{
         align-items: center;
     }
 
-
+}
 
 
 @keyframes mirrorEffect {
