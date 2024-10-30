@@ -101,9 +101,24 @@ blockquote{
 footer{
     background-color: #F9451D;
     width: 100vw;
-    padding: 20px;
+    /* padding: 20px; */
     padding-bottom: 0px;
+
+/*footer back to top is getting styled here*/
+    p:first-of-type {
+        text-align: center;
+        margin-top: 0px;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 20px;
+        padding-top: 30px;
+        padding-right: 0;
+        padding-left: 0;
+        padding-bottom: 0;
+    }
 }
+
+
 
 .mirror {
     display: inline-block; 
@@ -120,14 +135,19 @@ footer{
 }
 
 
-/*Footer Styling*/
+/*Footer Content Styling*/
 
-.backtotop{
+/* .backtotop{
     color:#050100;
-    padding: 8px 14px 8px 14px;
-    /* border:#050100 2px solid; */
-    border-radius: 5px;
-    align-self: center;
+    text-align: center;
+} */
+
+.smallMotif{
+    font-family: "Big Shoulders Inline Display";
+    text-align: center;
+    margin: 0;
+    padding:0;
+    font-size: calc(var(--root-size)*1.5);
 }
 
 .Classname {
@@ -137,6 +157,7 @@ footer{
     text-wrap: nowrap;
     text-align: center;
     align-items: center;
+    margin: 0;
 }
 
 .Partners{
@@ -145,9 +166,18 @@ footer{
     font-weight:300;
     text-wrap: nowrap;
     text-align: center;
+    margin: 0;
 }
 
-
+.bigMotif{
+    font-family: "Big Shoulders Inline Display";
+    font-size: calc(var(--root-size)*10);
+    letter-spacing:2;
+    text-align: center;
+    margin: 20 0 0 0 ;
+    padding: 0;
+    font-size: calc(var(--root-size)*2);
+}
 
 
 /*Start of Media Sizing*/
@@ -156,7 +186,6 @@ footer{
     h1 {
         font-size: calc(var(--root-size) * 5.5);
         /* text-align: center; */
-
     }
 
 }
@@ -177,7 +206,7 @@ footer{
     }
 }
 
-@media (min-width:550px) and (max-width:7990px){
+@media (min-width:550px) and (max-width:799px){
     h1 {
         font-size: calc(var(--root-size) * 7);
         /* text-align: center; */
@@ -202,7 +231,7 @@ blockquote{
     margin-right: 0;
 
 }
-
+}
 @media (min-width: 800px) {
 
     /* hgroup{
