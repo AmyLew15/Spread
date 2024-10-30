@@ -74,7 +74,7 @@ p{
     padding:calc(var(--root-size) *0.5);
 }
 p:first-of-type {
-    padding: 24px;
+    padding: 24px 9px 9px 9px;
   }
 
 blockquote{
