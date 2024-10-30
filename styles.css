@@ -89,6 +89,14 @@ blockquote{
 
 }
 
+blockquote cite{
+    display: inline-grid;
+    font-size: calc(var(--root-size) * 1.2);
+    color: #E88B44;
+    width: 80%;
+   
+}
+
 .blocklines{
     position: absolute; 
     right: var(--root-size); 
