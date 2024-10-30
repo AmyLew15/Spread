@@ -354,8 +354,9 @@ blockquote{
     
     .Classname {
         grid-row: 3; 
+        margin-top: 28px;
         margin-bottom: 0; 
-      font-size: calc(var(--root-size)*3);
+      font-size: calc(var(--root-size)*1.5);
     }
     
     .Partners {
@@ -367,9 +368,9 @@ blockquote{
     
     .bigMotif {
         grid-row: 5; 
-        margin-top: 50px;
-        font-size: calc(var(--root-size)*7);
-        letter-spacing: -5px
+        margin-top: 90px;
+        font-size: calc(var(--root-size)*4);
+        letter-spacing: -2px
     }
     
 
@@ -421,10 +422,44 @@ blockquote{
 
 }
 
-@media (min-width: 1260px) {
+@media (min-width: 1200px) {
     p{
         max-width: 65%;
     }
+
+
+    .backtotop {
+        grid-row: 1; 
+        margin-bottom: 0; 
+    }
+    
+    .smallMotif {
+        grid-row: 2; 
+        margin-top: 0; 
+    }
+    
+    .Classname {
+        grid-row: 3; 
+        margin-top: 28px;
+        margin-bottom: 0; 
+      font-size: calc(var(--root-size)*3);
+    }
+    
+    .Partners {
+        grid-row: 4; 
+        margin-top: 0; 
+        font-size: calc(var(--root-size)*1.5);
+
+    }
+    
+    .bigMotif {
+        grid-row: 5; 
+        margin-top: 90px;
+        font-size: calc(var(--root-size)*7);
+        letter-spacing: -5px
+    }
+
+
 
     footer p{
         display: block;
