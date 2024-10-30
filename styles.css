@@ -207,6 +207,8 @@ footer{
 }
 
 @media (min-width:550px) and (max-width:799px){
+
+
     h1 {
         font-size: calc(var(--root-size) * 7);
         /* text-align: center; */
@@ -222,6 +224,11 @@ footer{
     p:first-of-type {
         padding-top: 40px;
       }
+
+    footer p{
+        display: block;
+        text-align: center;
+    }
 
 blockquote{
     margin-left: 30vw;
@@ -317,18 +324,11 @@ blockquote{
         
     }
 
-    .FooterTextLarge {
-        font-family: 'Oswald';
-        font-size: var(--root-size)*8;
+    footer p{
+        display: block;
         text-align: center;
-        align-items: center;
-    }
+        max-width: 100%;
 
-    .FooterTextSmall{
-        font-family: 'Oswald';
-        font-size: var(--root-size)*2;
-        text-align: center;
-        align-items: center;
     }
 
 }
@@ -360,12 +360,28 @@ blockquote{
     .blocklines{
         opacity: 0;
     }
+
+    footer p{
+        display: block;
+        text-align: center;
+        max-width: 100%;
+
+    }
+
+
 }
 
 @media (min-width: 1260px) {
     p{
         max-width: 65%;
     }
+
+    footer p{
+        display: block;
+        text-align: center;
+        max-width: 100%;
+    }
+
 }
  
 
