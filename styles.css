@@ -186,6 +186,10 @@ footer{
     padding: 0;
     font-size: calc(var(--root-size)*2);
 }
+    /*Default motif char size for footer*/
+.bigMotif::before {
+    content: "||||||||||||||||||||||||||||||||||||||||||||||||||||||||||";
+}
 
 
 /*Start of Media Sizing*/
@@ -194,6 +198,13 @@ footer{
     h1 {
         font-size: calc(var(--root-size) * 5.5);
         /* text-align: center; */
+    }
+
+
+    /*To have a smaller motif size for smaller screens in footer*/
+    .bigMotif::before {
+        content: "|||||||||||||||||||||||";
+        letter-spacing: 6px;
     }
 
 }
