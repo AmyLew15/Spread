@@ -202,15 +202,16 @@ footer{
 
 @media (min-width:350px) and (max-width:450px){
     h1 {
-        font-size: calc(var(--root-size) * 5.5);
+        font-size: calc(var(--root-size) * 3);
+        text-wrap: nowrap;
         /* text-align: center; */
     }
 
 
     /*To have a smaller motif size for smaller screens in footer*/
     .bigMotif::before {
-        content: "|||||||||||||||||||||||";
-        letter-spacing: 6px;
+        content: "|||||||||||||||||||||||||||||||||||||";
+        margin-left: -10px;
     }
 
 }
