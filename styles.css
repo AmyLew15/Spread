@@ -88,7 +88,7 @@ blockquote{
     margin-bottom: 30px;
 }
 
-blockquote cite{
+cite{
     display: inline-grid;
     font-size: calc(var(--root-size) * 1);
     color: #6846FF;
@@ -211,15 +211,14 @@ footer{
 
     /*To have a smaller motif size for smaller screens in footer*/
     .bigMotif::before {
+        font-size:calc(var(--root-zise)*3)
         text-align: center;
     }
 
     .bigMotif:before {
-        text-size: calc(var(--root-size)*5)
-        content: "|||||||||||||||||||||||||||||||||||";
+        content "|||||||||||||||||||||||||||||||||||";
     }
 
-}
 
 /*@media (min-width: 500px) {
     /* hgroup {
@@ -244,8 +243,6 @@ footer{
 }*/
 
 @media (min-width:500px) and (max-width:799px){
-
-
     h1 {
         font-size: calc(var(--root-size) * 7);
     }
@@ -267,29 +264,11 @@ footer{
         max-width: 100%;
     }
 
-blockquote{
-    margin-left: 30vw;
-    max-width: 65vw;
-    text-align: right;
-    padding-right: 0;
-    margin-right: 0;
-}
-
-}
-@media (min-width: 800px) {
-
-    /* hgroup{
-        width: fit-content;
-    } */
-
-     p {
-        display: flex;
-        justify-content: flex-end;
-        max-width: 80%;
-        margin: 0 auto;
-        align-items: center;
+    cite{
+        font-size: calc(var(--root-size) *10);
     }
 
+@media (min-width: 800px) and (max-width:949){
     h1{
         font-size: calc(var(--root-size) * 14);
         line-height: calc(var(--root-size)*15);
@@ -297,7 +276,6 @@ blockquote{
         margin-left: auto;
         margin-right: 45px;
           }
-
 
     h2 {
         font-size: calc(var(--root-size) * 2);
@@ -316,6 +294,13 @@ blockquote{
         font-weight: 100;
     }
 
+    p {
+        display: flex;
+        justify-content: flex-end;
+        max-width: 80%;
+        margin: 0 auto;
+        align-items: center;
+    }
 
     blockquote{
         font-size: calc(var(--root-size) * 2);
@@ -340,7 +325,6 @@ blockquote{
         align-items: right;
     }
 
-
     blockquote::before, blockquote::after {
         content: ''; 
         display: block;
@@ -351,7 +335,6 @@ blockquote{
         right: 0;
     }
 
-
     blockquote:hover::before, blockquote:hover::after {
         width: 100%; 
     }
@@ -361,46 +344,41 @@ blockquote{
         
     }
 
-
     footer {
         display: grid;
         grid-template-rows: auto auto auto auto auto; 
         grid-template-columns: 1fr; 
-        gap: 0; 
-        /* padding: 40px; */
     }
-    
+
     .backtotop {
         grid-row: 1; 
         margin-bottom: 0; 
     }
-    
+
     .smallMotif {
         grid-row: 2; 
         margin-top: 0; 
     }
-    
+
     .Classname {
         grid-row: 3; 
         margin-top: 28px;
         margin-bottom: 0; 
       font-size: calc(var(--root-size)*1.5);
     }
-    
+
     .Partners {
         grid-row: 4; 
         margin-top: 0; 
         font-size: calc(var(--root-size)*1.5);
-
     }
-    
+
     .bigMotif {
         grid-row: 5; 
         margin-top: 90px;
         font-size: calc(var(--root-size)*4);
         letter-spacing: -2px
     }
-    
 
     footer p{
         display: block;
@@ -408,12 +386,9 @@ blockquote{
         max-width: 100%;
 
     }
-
-
 }
 
 @media (min-width: 950px) {
-
     h5 {
         font-size: calc(var(--root-size) * 6);
             position: absolute;
@@ -426,7 +401,6 @@ blockquote{
     h5::after {
         content: '||||||||||||||||||';
         letter-spacing: -3px;
-    
     }
 
     p{
@@ -444,17 +418,13 @@ blockquote{
         display: block;
         text-align: center;
         max-width: 100%;
-
     }
-
-
 }
 
 @media (min-width: 1200px) {
     p{
         max-width: 65%;
     }
-
 
     .backtotop {
         grid-row: 1; 
@@ -487,16 +457,12 @@ blockquote{
         letter-spacing: -5px
     }
 
-
-
     footer p{
         display: block;
         text-align: center;
         max-width: 100%;
     }
-
 }
- 
 
 @media (min-width: 2000px) {
     p{
@@ -514,24 +480,23 @@ blockquote{
         text-align: center;
         margin-top: 50px;
     }
-    
+
     h3{
         text-align: center;
         font-size: calc(var(--root-size)*2);
         line-height: calc(var(--line-height)*1.6);
-
     }
 
 h5{
     font-size: calc(var(--root-size)*9);
 }
 
-
     blockquote{
         max-width: 50vw;
         font-size: calc(var(--root-size)*2.8);
         line-height: calc(var(--line-height)*2.5);
     }
+
     blockquote cite {
         font-size: calc(var(--root-size)*1.8);
     }
