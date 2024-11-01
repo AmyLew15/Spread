@@ -91,9 +91,13 @@ blockquote{
 blockquote cite{
     display: inline-grid;
     font-size: calc(var(--root-size) * 1.2);
-    color: #E88B44;
+    color: #6846FF;
     width: 80%;
 
+}
+
+em{
+    color: #6846FF;
 }
 
 .blocklines{
