@@ -276,6 +276,10 @@ blockquote{
         align-items: center;
     }
 
+    p:first-of-type {
+        padding-top: 50px;
+      }
+
     blockquote{
         font-size: calc(var(--root-size) * 2);
         margin-left: 30vw;
