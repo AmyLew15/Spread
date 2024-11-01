@@ -216,28 +216,11 @@ footer{
 
 }
 
-@media (min-width: 500px) {
-    /* hgroup {
-        width: fit-content;
-    } */
-
-    h1{
-        font-size: calc(var(--root-size) * 8);
-    }
-
-
-    blockquote{
-        margin-top: calc(var(--root-size) * .5);
-        margin-bottom: calc(var(--root-size) * .5);
-    }
-}
-
-@media (min-width:550px) and (max-width:799px){
+@media (min-width:500px) and (max-width:799px){
 
 
     h1 {
         font-size: calc(var(--root-size) * 7);
-        /* text-align: center; */
     }
 
     p {
@@ -258,6 +241,8 @@ footer{
     }
 
 blockquote{
+    margin-top: calc(var(--root-size) * .5);
+    margin-bottom: calc(var(--root-size) * .5);
     margin-left: 30vw;
     max-width: 65vw;
     text-align: right;
