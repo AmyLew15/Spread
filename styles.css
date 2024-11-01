@@ -248,14 +248,40 @@ blockquote{
     text-align: right;
     padding-right: 0;
     margin-right: 0;
+    }
 
-}
 }
 @media (min-width: 800px) {
+    h1{
+        font-size: calc(var(--root-size) * 12);
+        line-height: calc(var(--root-size)*11);
+        text-wrap: nowrap;
+        text-align: right;
+        padding-bottom: 20px;
+        margin-left: auto;
+        margin-right: 45px;
+          }
 
-    /* hgroup{
-        width: fit-content;
-    } */
+    h2 {
+        font-size: calc(var(--root-size) * 2.5);
+        padding-top: 20px;
+        margin-left: 45px;
+    }
+
+    h3{
+        font-size: calc(var(--root-size) * 1.5);
+        line-height: calc(var(--root-size)*2);
+        font-weight: 100;
+        text-align: left;
+        padding-bottom: 60px;
+        margin-left: 45px;
+    }
+
+    h5{
+        font-size: calc(var(--root-size) * 5);
+        margin-left: -90px;
+        position: absolute;
+    }
 
      p {
         display: flex;
@@ -264,33 +290,6 @@ blockquote{
         margin: 0 auto;
         align-items: center;
     }
-
-    h1{
-        font-size: calc(var(--root-size) * 14);
-        line-height: calc(var(--root-size)*15);
-        text-align: right;
-        margin-left: auto;
-        margin-right: 45px;
-          }
-
-
-    h2 {
-        font-size: calc(var(--root-size) * 2);
-        padding-top: 20px;
-        margin-left: 45px;
-    }
-
-    h3{
-        font-size: calc(var(--root-size) * 1.5);
-        line-height: calc(var(--root-size)*2);
-        margin-left: 45px;
-        padding-bottom: 60px;
-        font-family: 'Oswald';
-        text-align: left;
-        opacity: 0.8;
-        font-weight: 100;
-    }
-
 
     blockquote{
         font-size: calc(var(--root-size) * 2);
@@ -315,7 +314,6 @@ blockquote{
         align-items: right;
     }
 
-
     blockquote::before, blockquote::after {
         content: ''; 
         display: block;
@@ -326,23 +324,19 @@ blockquote{
         right: 0;
     }
 
-
     blockquote:hover::before, blockquote:hover::after {
         width: 100%; 
     }
 
     .blocklines{
         opacity: 0;
-
     }
-
 
     footer {
         display: grid;
         grid-template-rows: auto auto auto auto auto; 
         grid-template-columns: 1fr; 
         gap: 0; 
-        /* padding: 40px; */
     }
 
     .backtotop {
@@ -366,7 +360,6 @@ blockquote{
         grid-row: 4; 
         margin-top: 0; 
         font-size: calc(var(--root-size)*1.5);
-
     }
 
     .bigMotif {
@@ -376,21 +369,16 @@ blockquote{
         letter-spacing: -2px
     }
 
-
     footer p{
         display: block;
         text-align: center;
         max-width: 100%;
-
     }
-
-
 }
 
 @media (min-width: 950px) {
-
     h5 {
-        font-size: calc(var(--root-size) * 6);
+        font-size: calc(var(--root-size) * 6.5);
             position: absolute;
             bottom: 60px;
             transform: rotate(90deg);
@@ -401,7 +389,6 @@ blockquote{
     h5::after {
         content: '||||||||||||||||||';
         letter-spacing: -3px;
-
     }
 
     p{
@@ -419,17 +406,13 @@ blockquote{
         display: block;
         text-align: center;
         max-width: 100%;
-
     }
-
-
 }
 
 @media (min-width: 1200px) {
     p{
         max-width: 65%;
     }
-
 
     .backtotop {
         grid-row: 1; 
@@ -452,24 +435,21 @@ blockquote{
         grid-row: 4; 
         margin-top: 0; 
         font-size: calc(var(--root-size)*1.5);
-
     }
 
     .bigMotif {
         grid-row: 5; 
         margin-top: 90px;
         font-size: calc(var(--root-size)*7);
+        font-weight: 900;
         letter-spacing: -5px
     }
-
-
 
     footer p{
         display: block;
         text-align: center;
         max-width: 100%;
     }
-
 }
 
 
@@ -501,7 +481,6 @@ h5{
     font-size: calc(var(--root-size)*9);
 }
 
-
     blockquote{
         max-width: 50vw;
         font-size: calc(var(--root-size)*2.8);
@@ -512,9 +491,6 @@ h5{
     }
 }
 
-
-
-
 /* Animation of h1 */
 @keyframes mirrorEffect {
     0% {
@@ -524,40 +500,44 @@ h5{
         transform: scaleX(-1); 
     }
 }
- /*Start of print media query*/
 
+ /*Start of print media query*/
 @media print{
-    
         * {
             animation: none; 
             transition: none; 
         }
-    
+
 hgroup{
     animation: none; 
-  transition: none; 
+    transition: none; 
 }
 
         .headerback {
             background-color: #ffffff;
             border-bottom: #F9451D;
         }
-    
+
     hgroup{
         border-bottom: 6px solid #F9451D;
     }
-    
+
     blockquote{
         border: none;
         width: 90%;
         page-break-inside: avoid;
     }
-    
+
     blockquote::before{
-        content: "â€œ";
+        content: '\201C';
         font-size: calc(var(--root-size) * 4); 
     }
-    
+
+    blockquote::after {
+        content: '\201D';
+        font-size: calc(var(--root-size) * 4); 
+      }
+
     .blocklines{
         position: relative;
         margin: 0;
@@ -565,32 +545,27 @@ hgroup{
         color: #F9451D;
         clear: both;
         font-size: calc(var(--root-size) * 2.8); 
-    
+
     }
     blockquote cite{
         color: #F9451D;
     }
-    
+
     footer{
-        page-break-before: always;
         page-break-inside: avoid;
         border-top: 6px solid #F9451D;
     }
-    
+
     footer .bigMotif{
         color: #F9451D;
     }
-    
+
     .backtotop{
         display: none;
     }
-    
+
     footer .smallMotif{
     display: none;
     }
-    
-
-    
-    
 
 }
