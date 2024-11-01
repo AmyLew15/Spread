@@ -531,3 +531,22 @@ h5{
         transform: scaleX(-1); 
     }
 }
+
+
+/*Start of print media query*/
+
+@media print{
+
+    * {
+        animation: none; 
+        transition: none; 
+    }
+
+    .headerback {
+        background-color: #ffffff;
+        border-bottom: #F9451D;
+    }
+
+
+
+}
