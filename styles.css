@@ -530,3 +530,69 @@ h5{
     100% {
         transform: scaleX(-1); 
     }
+}
+ /*Start of print media query*/
+
+@media print{
+    
+        * {
+            animation: none; 
+            transition: none; 
+        }
+    
+        .headerback {
+            background-color: #ffffff;
+            border-bottom: #F9451D;
+        }
+    
+    hgroup{
+        border-bottom: 6px solid #F9451D;
+    }
+    
+    blockquote{
+        border: none;
+        width: 90%;
+        page-break-inside: avoid;
+    }
+    
+    blockquote::before{
+        content: "“";
+        font-size: calc(var(--root-size) * 4); 
+    }
+    
+    .blocklines{
+        position: relative;
+        margin: 0;
+        padding: 0;
+        color: #F9451D;
+        clear: both;
+        font-size: calc(var(--root-size) * 2.8); 
+    
+    }
+    blockquote cite{
+        color: #F9451D;
+    }
+    
+    footer{
+        page-break-before: always;
+        page-break-inside: avoid;
+        border-top: 6px solid #F9451D;
+    }
+    
+    footer .bigMotif{
+        color: #F9451D;
+    }
+    
+    .backtotop{
+        display: none;
+    }
+    
+    footer .smallMotif{
+    display: none;
+    }
+    
+
+    
+    
+
+}
