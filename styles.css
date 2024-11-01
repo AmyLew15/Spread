@@ -101,11 +101,15 @@ em{
 }
 
 .blocklines{
+    font-family: "Big Shoulders Inline Display";
+    font-size: calc(var(--root-size) * 2); 
+    font-weight: 900;
     position: absolute; 
     right: var(--root-size); 
-    bottom: -32px; 
-    font-size: calc(var(--root-size) * 2); 
-    font-family: "Big Shoulders Inline Display";
+    margin-right: -18px;
+    bottom: -28px; 
+
+
 
 }
 
