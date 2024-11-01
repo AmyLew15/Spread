@@ -189,12 +189,13 @@ footer{
     font-size: calc(var(--root-size)*3);
     font-weight: 900;
     text-align: center;
-    margin: 0 0 0 0;
+    margin: 20 0 0 0;
 
 }
     /*Default motif char size for footer*/
 .bigMotif::before {
-    content: "||||||||||||||||||||||||||||||||||||||||||||||||||||||||||";
+    content: "||||||||||||||||||||||";
+    text-align: center;
 }
 
 
@@ -202,16 +203,15 @@ footer{
 
 @media (min-width:350px) and (max-width:450px){
     h1 {
-        font-size: calc(var(--root-size) * 3);
-        text-wrap: nowrap;
+        font-size: calc(var(--root-size) * 5);
         /* text-align: center; */
     }
 
 
     /*To have a smaller motif size for smaller screens in footer*/
     .bigMotif::before {
-        content: "|||||||||||||||||||||||||||||||||||||";
-        margin-left: -10px;
+        content: "|||||||||||||";
+        text-align: center;
     }
 
 }
