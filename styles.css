@@ -117,7 +117,7 @@ footer{
     background-color: #F9451D;
     width: 100vw;
     /* padding: 20px; */
-    padding-bottom: 0px;
+    padding-bottom: 10px;
 
 /*footer back to top is getting styled here*/
     p:first-of-type {
@@ -186,12 +186,11 @@ footer{
 
 .bigMotif{
     font-family: "Big Shoulders Inline Display";
-    font-size: calc(var(--root-size)*10);
-    letter-spacing:2;
+    font-size: calc(var(--root-size)*3);
+    font-weight: 900;
     text-align: center;
-    margin: 20 0 0 0 ;
-    padding: 0;
-    font-size: calc(var(--root-size)*2);
+    margin: 0 0 0 0;
+
 }
     /*Default motif char size for footer*/
 .bigMotif::before {
