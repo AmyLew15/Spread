@@ -114,6 +114,7 @@ footer{
 
 /*back to top*/
     p:first-of-type {
+        font-family: "Oswald";
         text-align: center;
         text-decoration: underline 2px #6846FF;
         margin-top: 0px;
