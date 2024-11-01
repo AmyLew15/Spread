@@ -540,6 +540,11 @@ h5{
             transition: none; 
         }
     
+hgroup{
+    animation: none; 
+  transition: none; 
+}
+
         .headerback {
             background-color: #ffffff;
             border-bottom: #F9451D;
