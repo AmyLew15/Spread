@@ -308,6 +308,11 @@ blockquote{
         right: 0;
     }
 
+    blockquote cite{
+        display: inline-grid;
+        font-size: calc(var(--root-size) * 1.4);
+    }
+
     blockquote:hover::before, blockquote:hover::after {
         width: 100%; 
     }
@@ -382,6 +387,11 @@ blockquote{
         line-height: calc(var(--line-height)*1.2);
     }
 
+    blockquote cite{
+        display: inline-grid;
+        font-size: calc(var(--root-size) * 1.6);
+    }
+
     .blocklines{
         opacity: 0;
     }
@@ -397,6 +407,10 @@ blockquote{
     p{
         max-width: 65%;
     }
+
+    blockquote cite{
+        display: inline-grid;
+        font-size: calc(var(--root-size) * 1.8);
 
     .backtotop {
         grid-row: 1; 
