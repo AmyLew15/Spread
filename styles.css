@@ -23,8 +23,6 @@ h1{
     font-family: "Big Shoulders Inline Display";
     font-size: calc(var(--root-size) * 6);
     font-weight:900;
-    /* text-wrap: nowrap; */
-    /* text-align: center; */
     margin-top: -36px;
 }
 
@@ -78,7 +76,7 @@ p:first-of-type {
   }
 
 blockquote{
-    position: relative; /* Set relative positioning */
+    position: relative;
     font-family: "Oswald";
     font-size: calc(var(--root-size) * 1.5);
     text-wrap: pretty;
@@ -93,7 +91,6 @@ blockquote cite{
     font-size: calc(var(--root-size) * 1.2);
     color: #6846FF;
     width: 80%;
-
 }
 
 em{
@@ -113,24 +110,21 @@ em{
 footer{
     background-color: #F9451D;
     width: 100vw;
-    /* padding: 20px; */
     padding-bottom: 10px;
 
-/*footer back to top is getting styled here*/
+/*back to top*/
     p:first-of-type {
         text-align: center;
+        text-decoration: underline 2px #6846FF;
         margin-top: 0px;
         margin-right: 0;
         margin-left: 0;
-        /* margin-bottom: 20px; */
         padding-top: 30px;
         padding-right: 0;
         padding-left: 0;
         padding-bottom: 0;
     }
 }
-
-
 
 .mirror {
     display: inline-block; 
@@ -145,7 +139,6 @@ footer{
         transform: scaleX(-1); 
     }
 }
-
 
 /*Footer Content Styling*/
 .smallMotif{
@@ -190,14 +183,12 @@ footer{
 }
 
 /*Start of Media Sizing*/
-
 @media (min-width:350px) and (max-width:450px){
     h1 {
         font-size: calc(var(--root-size) * 4.8);
-        /* text-align: center; */
     }
 
-    /*To have a smaller motif size for smaller screens in footer*/
+    /*Smaller motif size for smaller screens*/
     .bigMotif::before {
         content: "|||||||||||||";
         text-align: center;
@@ -234,8 +225,8 @@ blockquote{
         text-align: center;
         max-width: 100%;
     }
-
 }
+
 @media (min-width: 800px) {
     h1{
         font-size: calc(var(--root-size) * 12);
@@ -443,7 +434,6 @@ blockquote{
     }
 }
 
-
 @media (min-width: 2000px) {
     p{
         max-width: 50vw;
@@ -465,7 +455,6 @@ blockquote{
         text-align: center;
         font-size: calc(var(--root-size)*2);
         line-height: calc(var(--line-height)*1.6);
-
     }
 
 h5{
@@ -477,6 +466,7 @@ h5{
         font-size: calc(var(--root-size)*2.8);
         line-height: calc(var(--line-height)*2.5);
     }
+
     blockquote cite {
         font-size: calc(var(--root-size)*1.8);
     }
@@ -498,20 +488,21 @@ h5{
             animation: none; 
             transition: none; 
         }
-    
+
     hgroup{
     animation: none; 
     transition: none; 
     }
-        .headerback {
-            background-color: #ffffff;
-            border-bottom: #F9451D;
-        }
-    
+
+    .headerback {
+    background-color: #ffffff;
+    border-bottom: #F9451D;
+    }
+
     hgroup{
         border-bottom: 6px solid #F9451D;
     }
-    
+
     blockquote{
         border: none;
         width: 90%;
@@ -526,7 +517,7 @@ h5{
         font-size: calc(var(--root-size) * 4); 
         font-weight: 900;
     }
-    
+
     blockquote::after {
         content: '\201D';
         font-family: "Big Shoulders Inline Display";
@@ -534,31 +525,33 @@ h5{
         font-weight: 900;
         display: block;
       }
-    
+
     blockquote cite{
         color: #F9451D;
     }
+
     .blocklines{
-        display:none;
+    display:none;
     }
+
     em{
      color:  #F9451D;
     }
+
     footer{
         page-break-inside: avoid;
         border-top: 6px solid #F9451D;
     }
-    
+
     footer .bigMotif{
         color: #F9451D;
     }
-    
+
     .backtotop{
         display: none;
     }
-    
+
     footer .smallMotif{
     display: none;
     }
-    
-    }
+}
