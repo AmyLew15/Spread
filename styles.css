@@ -439,7 +439,7 @@ blockquote{
     .bigMotif {
         grid-row: 5; 
         margin-top: 90px;
-        font-size: calc(var(--root-size)*7);
+        font-size: calc(var(--root-size)*12);
         font-weight: 900;
         letter-spacing: -5px
     }
@@ -460,6 +460,7 @@ blockquote{
     h1{
         font-size: calc(var(--root-size)*16);
         text-align: center;
+        line-height: calc(var(--root-size));
     }
 
     h2{
