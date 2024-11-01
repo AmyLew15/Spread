@@ -238,7 +238,7 @@ blockquote{
         padding-bottom: 20px;
         margin-left: auto;
         margin-right: 45px;
-          }
+    }
 
     h2 {
         font-size: calc(var(--root-size) * 2.5);
@@ -271,7 +271,7 @@ blockquote{
 
     p:first-of-type {
         padding-top: 50px;
-      }
+    }
 
     blockquote{
         font-size: calc(var(--root-size) * 2);
@@ -411,6 +411,7 @@ blockquote{
     blockquote cite{
         display: inline-grid;
         font-size: calc(var(--root-size) * 1.8);
+    }
 
     .backtotop {
         grid-row: 1; 
