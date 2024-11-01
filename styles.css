@@ -460,7 +460,7 @@ blockquote{
     h1{
         font-size: calc(var(--root-size)*16);
         text-align: center;
-        line-height: calc(var(--root-size));
+        line-height: calc(var(--root-size)*12);
     }
 
     h2{
